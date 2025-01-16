@@ -44,7 +44,7 @@ public class PubSubController {
             return Mono.just(new ResponseEntity<>(msg, HttpStatus.BAD_REQUEST));
         }
 
-        // En caso de que si exista el mensaje
+        // En caso de que si exista el mensaje obtenemos la data
         String data = message.getData();
         UserMessage userMessage;
 
